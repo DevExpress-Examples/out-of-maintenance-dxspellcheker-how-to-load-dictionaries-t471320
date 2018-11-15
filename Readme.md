@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/SpellingDictionaryExample/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/SpellingDictionaryExample/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/SpellingDictionaryExample/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/SpellingDictionaryExample/MainWindow.xaml))
+<!-- default file list end -->
 # DXSpellCheker - How to load dictionaries
 
 
