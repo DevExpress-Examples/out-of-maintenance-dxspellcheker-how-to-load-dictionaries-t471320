@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SpellingDictionaryExample</RootNamespace>
+    <AssemblyName>SpellingDictionaryExample</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <Platforms>x86;AnyCPU</Platforms>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dictionaries\Hunspell\en_US\en_US.aff" />
+    <EmbeddedResource Include="Dictionaries\Hunspell\en_US\en_US.dic" />
+    <EmbeddedResource Include="Dictionaries\Hunspell\es_ES\es_ANY.aff" />
+    <EmbeddedResource Include="Dictionaries\Hunspell\es_ES\es_ANY.dic" />
+    <EmbeddedResource Include="Dictionaries\ISpell\en_US\american.xlg" />
+    <EmbeddedResource Include="Dictionaries\ISpell\en_US\english.aff" />
+    <EmbeddedResource Include="Dictionaries\ISpell\es_ES\espanol.aff" />
+    <EmbeddedResource Include="Dictionaries\ISpell\es_ES\espanol.dic" />
+    <EmbeddedResource Include="Dictionaries\OpenOffice\en_US\en_US.aff" />
+    <EmbeddedResource Include="Dictionaries\OpenOffice\en_US\en_US.dic" />
+    <EmbeddedResource Include="Dictionaries\OpenOffice\es_ES\es_ES.aff" />
+    <EmbeddedResource Include="Dictionaries\OpenOffice\es_ES\es_ES.dic" />
+    <EmbeddedResource Include="Dictionaries\CustomEnglish.dic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dictionaries\EnglishAlphabet.txt" />
+    <EmbeddedResource Include="Dictionaries\SpanishAlphabet.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dictionaries\Hunspell\en_US\README_en_US.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Dictionaries\Hunspell\en_US\WordNet_license.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dictionaries\Hunspell\es_ES\README_es_ANY.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dictionaries\OpenOffice\en_US\README_en_US.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dictionaries\OpenOffice\es_ES\README_es_ES.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Data" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Office.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Export" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.SpellChecker.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Reporting" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.SpellChecker" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.DXStyle" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2016Colorful" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2016White" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.1.*-*" />
+  </ItemGroup>
+</Project>

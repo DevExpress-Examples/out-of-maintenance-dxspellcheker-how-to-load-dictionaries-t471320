@@ -3,7 +3,7 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
-        xmlns:dxsc="clr-namespace:DevExpress.Xpf.SpellChecker;assembly=DevExpress.Xpf.SpellChecker.v16.1"
+        xmlns:dxsc="clr-namespace:DevExpress.Xpf.SpellChecker;assembly=DevExpress.Xpf.SpellChecker.v21.1"
         x:Class="SpellingDictionaryExample.MainWindow"
         Title="MainWindow" Height="376" Width="525" ResizeMode="NoResize">
     <Grid>
